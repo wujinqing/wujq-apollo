@@ -3,6 +3,9 @@
 #### 官网
 > https://github.com/ctripcorp/apollo
 
+### Core Concepts 核心概念
+![](doc/img/p11.png)
+
 #### 四个核心模块及其主要功能
 ![四个核心模块及其主要功能](doc/img/p1.png)
 
