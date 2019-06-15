@@ -276,8 +276,8 @@ apollo.bootstrap.namespaces = application,FX.apollo,application.yml
 |apollo.bootstrap.eagerLoad.enabled|将Apollo配置加载提到初始化日志系统之前(1.2.0+), 如果希望把日志相关的配置（如logging.level.root=info或logback-spring.xml中的参数）也放在Apollo管理，那么可以额外配置apollo.bootstrap.eagerLoad.enabled=true来使Apollo的加载顺序放到日志系统加载之前，不过这会导致Apollo的启动过程无法通过日志的方式输出(因为执行Apollo加载的时候，日志系统压根没有准备好呢！所以在Apollo代码中使用Slf4j的日志输出便没有任何内容).|apollo.bootstrap.eagerLoad.enabled=true|
 |apollo.autoUpdateInjectedSpringProperties|placeholder在运行时是否自动更新|默认true|
 
-
-
+### 一套Portal可以管理多个环境，但是每个环境都需要独立部署一套Config Service、Admin Service和ApolloConfigDB
+![](doc/img/p12.png)
 
 
 
